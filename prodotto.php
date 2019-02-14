@@ -17,7 +17,7 @@ class Prodotto {
   }
 
   public function rimanenze(){
-    $rimanenze = $quantita - $quantitaVendute;
+    $rimanenze = $this->quantita - $this->quantitaVendute;
     return $rimanenze;
   }
 
