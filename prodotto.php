@@ -8,6 +8,7 @@ class Prodotto {
   public $brandProdotto;
   public $categoriaMerceologica;
   public $quantita;
+  public $quantitaVendute;
 
 
   function __construct($categoriaMerceologica){
@@ -15,8 +16,8 @@ class Prodotto {
         $this->categoria = $categoriaMerceologica;
   }
 
-  public function rimanenze($quantitaVendute){
-    $rimanenze = $quantita-$quantitaVendute;
+  public function rimanenze(){
+    $rimanenze = $quantita - $quantitaVendute;
     return $rimanenze;
   }
 
